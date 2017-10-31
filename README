@@ -1,0 +1,68 @@
+--------------------------------------------------------------------------------
+﻿Description
+--------------------------------------------------------------------------------
+
+This  directory  contains the implementation of the salient region detector des-
+cribed in the paper:
+
+    Joint upsampling of random color distance maps for fast salient region
+    detection
+    Maiko M.I. Lie, Gustavo B. Borba, Hugo Vieira Neto, Humberto R. Gamba
+    Pattern Recognition Letters, 2017
+    http://dx.doi.org/10.1016/j.patrec.2017.09.010
+
+The source code is written in MATLAB,  and makes use of C++  code from a MEX in-
+terface. If you use this source code, please cite the work above. Access the DOI
+link above for up-to-date reference information.
+
+--------------------------------------------------------------------------------
+Files
+--------------------------------------------------------------------------------
+The following files should be in this directory:
+
+    JUSAL.m     Salient region detector function.
+    mexFGS.cpp  Fast Global Smoother (FGS) MEX file, from Min et al. (2014).
+    compile.m   Compilation script for the MEX file.
+    README      This file.
+
+--------------------------------------------------------------------------------
+Usage
+--------------------------------------------------------------------------------
+First,  you will need to compile the MEX file. Within  this directory,  or after 
+adding it with addpath(), run:
+
+    compile
+
+(your MATLAB  environment must have a C++  compiler properly configured. If this
+is not the case, refer to the MathWorks documentation for how to do this)
+
+For a demo, run:
+
+    I = imread('peppers.png');
+    S = JUSAL(I, 0.25, 0.2, 3);
+    figure; imshow(I); figure; imshow(S)
+
+For more information, including a description of the arguments, run:
+
+    help JUSAL
+
+--------------------------------------------------------------------------------
+Third party source code
+--------------------------------------------------------------------------------
+This  work uses the  Fast Global Smoother (FGS) by Min et al. (2014),  including
+their source code, which can be accessed in the following link:
+
+    https://sites.google.com/site/globalsmoothing/
+
+The reference for their method is:
+
+    Fast Global Image Smoothing based on Weighted Least Squares
+    D. Min, S. Choi, J. Lu, B. Ham, K. Sohn, and M. N. Do,
+    IEEE Trans. Image Processing, vol. no. pp., 2014.
+
+If you use the parts of our work that include this source code, please also cre-
+dit their work. In this case, we also recommend that you read their own README
+and license information.
+
+                                                         Maiko Lie
+                                                         Last updated: Oct, 2017
