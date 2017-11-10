@@ -10,17 +10,16 @@ cribed in the paper:
     Pattern Recognition Letters, 2017
     http://dx.doi.org/10.1016/j.patrec.2017.09.010
 
-which corresponds to the more up-to-date version of the method described  previ-
-ously in:
+The source code is written in MATLAB,  and makes use of C++  code from a MEX in-
+terface. If you use this source code, please cite the work above. Access the DOI
+link above for up-to-date reference information.
+
+A previous version of this method was published in a conference paper:
 
    Fast Saliency Detection Using Random Color Samples and Joint Upsampling
    Maiko M. I. Lie, Gustavo B. Borba, Hugo Vieira Neto, Humberto R. Gamba
    Proceedings of the 29th Conference on Graphics Patterns and Images, 2016 
    http://dx.doi.org/10.1109/SIBGRAPI.2016.038
-
-The source code is written in MATLAB,  and makes use of C++  code from a MEX in-
-terface. If you use this source code, please cite the work above. Access the DOI
-link above for up-to-date reference information.
 
 --------------------------------------------------------------------------------
 Files
