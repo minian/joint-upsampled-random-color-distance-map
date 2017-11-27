@@ -10,9 +10,9 @@ cribed in the paper:
     Pattern Recognition Letters, 2017
     http://dx.doi.org/10.1016/j.patrec.2017.09.010
 
-The source code is written in MATLAB,  and makes use of C++  code from a MEX in-
-terface. If you use this source code, please cite the work above. Access the DOI
-link above for up-to-date reference information.
+The source code is written in  MATLAB,  and makes  use of third-party  C++  code 
+using a MEX interface. If you use this source code,  please cite the work above.
+Access the DOI link above for up-to-date reference information.
 
 A previous version of this method was published in a conference paper:
 
